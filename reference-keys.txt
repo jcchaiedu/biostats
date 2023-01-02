@@ -3,9 +3,8 @@ tab:nice-tab
 eq:binom
 thm:tri
 about-me
-usage
-render-book
-preview-book
+일상속의-확률-예시
+확률의-유래
 hello-bookdown
 a-section
 cross

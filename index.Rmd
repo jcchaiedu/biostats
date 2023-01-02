@@ -21,42 +21,28 @@ I am tester
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
 
-## Usage 
+## 1.1 일상속의 확률 예시
 
-Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
+내일 비가 올 확률은 80%이다.
+흡연자는 비흡연자에 비해 폐암에 걸릴 확률이 높다.
+2017년 한국시리즈에서 A팀에 이길 확률은?
+로또에서 1등에 당첨 확률은?
+확률 (probability)은 불확실한 (uncertain) 상황에서 어떤 일 (event)이 일어날 가능성 (possibility)이 얼마인지 (measure)를 알려줌
 
-Use second-level and higher headings within chapters like: `## A short section` or `### An even shorter section`.
+## 1.2 확률의 유래
 
-The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
+17세기 프랑스의 직업 도박사 Chevalier de Méré(쉬발리에 드 메레)가 Blaise Pascal(블레즈 파스칼) 에게 준 문제
 
-## Render book
+Blaise Pascal
 
-You can render the HTML version of this example book without changing anything:
+17세기 신학자, 수학자, 철학자, 소설가, 과학자, …
 
-1. Find the **Build** pane in the RStudio IDE, and
+팡세: 인간은 자연 가운데서 가장 약한 하나의 갈대에 불과하다. 그러나 그것은 생각하는 갈대이다.
 
-1. Click on **Build Book**, then select your output format, or select "All formats" if you'd like to use multiple formats from the same book source files.
+- 두 사람이 주사위 도박 게임
 
-Or build the book from the R console:
+  - A: 주사위를 4번 던져 6이 한번이라도 나오면 승리
+  - B: 주사위를 4번 던져 6이 한번도 나오지 않으면 승리
+  - A, B가 중도에 게임을 중단함
+  -  드 메레의 의문: 한사람이 모두 돈을 잃을 때까지 계속한다면 과연 누가 이길까?  ⇒ (A or B?)
 
-```{r, eval=FALSE}
-bookdown::render_book()
-```
-
-To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
-
-## Preview book
-
-As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
-
-```{r eval=FALSE}
-bookdown::serve_book()
-```
-
-
-```{r include=FALSE}
-# automatically create a bib database for R packages
-knitr::write_bib(c(
-  .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
-```

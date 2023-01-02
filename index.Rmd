@@ -1,6 +1,6 @@
 --- 
-title: "A Minimal Book Example"
-author: "John Doe"
+title: "의생명확률통계"
+author: "Jin Chai"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
